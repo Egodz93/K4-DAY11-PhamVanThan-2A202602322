@@ -1,1 +1,37 @@
 round,slice,frame,object_ref,cell,what,why,severity,owner,rule_id,evidence,action,rules_version,note
+calib,C0,adasind_019560.jpg,L3,na,SPURIOUS,,,,,,,,
+calib,C0,adasind_019560.jpg,L5,na,SPURIOUS,,,,,,,,
+calib,C0,adasind_019560.jpg,L6+R3,na,WRONG_CLASS,,,,,,,,
+calib,C0,adasind_019560.jpg,L9,na,SPURIOUS,,,,,,,,
+r2_qa,B2-dense,adasind_062370.jpg,L2,L_only,ATTRIBUTE,,,,R05,submission/r2_qa/qa_overlay.html,,v1.0.0,QA ghi nhận truncated/occluded theo mép ảnh. Giữ nhãn
+r2_qa,B2-dense,adasind_069450.jpg,L1,L_only,BOX_GEOMETRY,,,,R02,submission/r2_qa/qa_overlay.html,,v1.0.0,QA ghi nhận box ThreeWheeler bám phần nhìn thấy trên ảnh gốc. Giữ nhãn
+r2_qa,B2-dense,adasind_117120.jpg,L1,L_only,STRUCTURE,,,,R04,submission/r2_qa/qa_overlay.html,,v1.0.0,QA ghi nhận Pedestrian riêng, không gộp với Bike
+r2_qa,B2-dense,adasind_117120.jpg,L8,L_only,STRUCTURE,,,,R03,submission/r2_qa/qa_overlay.html,,v1.0.0,QA ghi nhận class ThreeWheeler phù hợp vật thể nhìn thấy. Giữ nhãn
+r2_qa,B2-dense,adasind_062370.jpg,ego_body,L_only,IGNORE_SCOPE,,,,R07,submission/r2_qa/qa_overlay.html,,v1.0.0,QA ghi nhận ego_body không phủ box giao thông. Giữ vùng ignore
+calib,C0,adasind_019560.jpg,L10,na,SPURIOUS,,,,,,,,
+r1_craft,B2-dense,adasind_062370.jpg,R7,na,MISSING,,,,,,,,
+r1_craft,B2-dense,adasind_062370.jpg,R8,na,MISSING,,,,,,,,
+r1_craft,B2-dense,adasind_117120.jpg,L1+R6,na,DUPLICATE,,,,,,,,
+r1_craft,B2-dense,adasind_117120.jpg,L6,na,SPURIOUS,,,,,,,,
+r3_diag,B2-dense,adasind_062370.jpg,L7+R1,LR_noM,MISSING,E4_model_domain,P3,ai_team,R01,submission/r3_diag/model_compare.md,keep_with_reason,v1.0.0,Model misses a visible object present in L and R. Keep the human label and use this as model evidence.
+r3_diag,B2-dense,adasind_062370.jpg,L4+R5,LR_noM,MISSING,E4_model_domain,P3,ai_team,R01,submission/r3_diag/model_compare.md,keep_with_reason,v1.0.0,Model misses a visible object present in L and R. Keep the human label and use this as model evidence.
+r3_diag,B2-dense,adasind_062370.jpg,L3+R6,LR_noM,MISSING,E4_model_domain,P3,ai_team,R01,submission/r3_diag/model_compare.md,keep_with_reason,v1.0.0,Model misses a visible object present in L and R. Keep the human label and use this as model evidence.
+r3_diag,B2-dense,adasind_062370.jpg,R7,R_only,MISSING,E5_unresolved,P2,qa,R01,submission/r3_diag/local_quality_conflicts.csv,escalate,v1.0.0,Reference-only ThreeWheeler is nested with a nearby reference box. Review the original image before changing labels.
+r3_diag,B2-dense,adasind_062370.jpg,R8,R_only,MISSING,E5_unresolved,P2,qa,R01,submission/r3_diag/local_quality_conflicts.csv,escalate,v1.0.0,Reference-only Truck is partly occluded. Review the original image before changing labels.
+r3_diag,B2-dense,adasind_062370.jpg,M3,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R01,submission/r3_diag/model_compare.md,keep_with_reason,v1.0.0,Model-only prediction is not supported by the L and R object set. Keep it as model false-positive evidence.
+r3_diag,B2-dense,adasind_062370.jpg,M4,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R01,submission/r3_diag/model_compare.md,keep_with_reason,v1.0.0,Model-only prediction is not supported by the L and R object set. Keep it as model false-positive evidence.
+r3_diag,B2-dense,adasind_062370.jpg,M5,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R03,submission/r3_diag/model_compare.md,keep_with_reason,v1.0.0,Model class differs from the visible ThreeWheeler area. Keep the human annotation and retain the model error for diagnosis.
+r3_diag,B2-dense,adasind_062370.jpg,M8,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R01,submission/r3_diag/model_compare.md,keep_with_reason,v1.0.0,Model-only prediction is not supported by the L and R object set. Keep it as model false-positive evidence.
+r3_diag,B2-dense,adasind_062370.jpg,M10,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R03,submission/r3_diag/model_compare.md,keep_with_reason,v1.0.0,Model class differs from the visible ThreeWheeler area. Keep the human annotation and retain the model error for diagnosis.
+r3_diag,B2-dense,adasind_069450.jpg,L1+R1,LR_noM,MISSING,E4_model_domain,P3,ai_team,R01,submission/r3_diag/model_compare.md,keep_with_reason,v1.0.0,Model misses a visible object present in L and R. Keep the human label and use this as model evidence.
+r3_diag,B2-dense,adasind_069450.jpg,L4+R2,LR_noM,MISSING,E4_model_domain,P3,ai_team,R01,submission/r3_diag/model_compare.md,keep_with_reason,v1.0.0,Model misses a visible object present in L and R. Keep the human label and use this as model evidence.
+r3_diag,B2-dense,adasind_069450.jpg,M5,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R01,submission/r3_diag/model_compare.md,keep_with_reason,v1.0.0,Model-only prediction is not supported by the L and R object set. Keep it as model false-positive evidence.
+r3_diag,B2-dense,adasind_069450.jpg,M7,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R01,submission/r3_diag/model_compare.md,keep_with_reason,v1.0.0,Model-only prediction is not supported by the L and R object set. Keep it as model false-positive evidence.
+r3_diag,B2-dense,adasind_117120.jpg,L3+R2,LR_noM,MISSING,E4_model_domain,P3,ai_team,R01,submission/r3_diag/model_compare.md,keep_with_reason,v1.0.0,Model misses a visible object present in L and R. Keep the human label and use this as model evidence.
+r3_diag,B2-dense,adasind_117120.jpg,L8+R4,LR_noM,MISSING,E4_model_domain,P3,ai_team,R01,submission/r3_diag/model_compare.md,keep_with_reason,v1.0.0,Model misses a visible object present in L and R. Keep the human label and use this as model evidence.
+r3_diag,B2-dense,adasind_117120.jpg,L1,L_only,SPURIOUS,E5_unresolved,P2,qa,R04,submission/r3_diag/local_quality_conflicts.csv,escalate,v1.0.0,The image suggests a separate pedestrian, but the reference does not contain the corresponding object. Adjudicate the original frame.
+r3_diag,B2-dense,adasind_117120.jpg,L6+M8,LM_noR,SPURIOUS,E0_reference_defect,P2,qa,R01,submission/r3_diag/local_quality_conflicts.csv,escalate,v1.0.0,L and M support a visible Car while R has no matching box. Escalate the reference omission instead of editing the locked label silently.
+r3_diag,B2-dense,adasind_117120.jpg,M1,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R01,submission/r3_diag/model_compare.md,keep_with_reason,v1.0.0,Model-only prediction is not supported by the L and R object set. Keep it as model false-positive evidence.
+r3_diag,B2-dense,adasind_117120.jpg,M6,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R01,submission/r3_diag/model_compare.md,keep_with_reason,v1.0.0,Model-only prediction is not supported by the L and R object set. Keep it as model false-positive evidence.
+r3_diag,B2-dense,adasind_117120.jpg,M7,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R01,submission/r3_diag/model_compare.md,keep_with_reason,v1.0.0,Model-only prediction is not supported by the L and R object set. Keep it as model false-positive evidence.
+r3_diag,B2-dense,adasind_117120.jpg,M10,M_only,SPURIOUS,E4_model_domain,P3,ai_team,R01,submission/r3_diag/model_compare.md,keep_with_reason,v1.0.0,Model-only prediction is not supported by the L and R object set. Keep it as model false-positive evidence.

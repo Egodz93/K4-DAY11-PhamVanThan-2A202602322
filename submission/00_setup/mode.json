@@ -1,0 +1,24 @@
+{
+  "members": [
+    "than"
+  ],
+  "assignments": {
+    "than": "B2-dense"
+  },
+  "self": "than",
+  "slice": "B2-dense",
+  "degrade": [],
+  "current_slice": "B2-dense",
+  "support_prefill": true,
+  "support_slice": "B2-dense",
+  "prefill_box_ids": [
+    "adasind_062370.jpg:1",
+    "adasind_062370.jpg:2",
+    "adasind_062370.jpg:3",
+    "adasind_062370.jpg:4",
+    "adasind_062370.jpg:5",
+    "adasind_069450.jpg:1",
+    "adasind_069450.jpg:2",
+    "adasind_069450.jpg:3"
+  ]
+}

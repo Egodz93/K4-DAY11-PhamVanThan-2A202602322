@@ -1,1 +1,5 @@
 id,date,question,decision,rationale,status
+1,2026-09-28,Model-only và model-missing trong B2-dense,keep_with_reason,Những dòng này là khác biệt của model đóng băng so với L/R. Giữ nhãn người và dùng chúng làm bằng chứng chẩn đoán model.,done
+2,2026-09-28,Reference-only R7 và R8 trong adasind_062370.jpg,escalate,Box lồng nhau và vật bị che cần người soát ảnh gốc trước khi sửa reference.,escalated
+3,2026-09-28,L1 và L6+M8 trong adasind_117120.jpg,escalate,Ảnh và nhãn L cho thấy vật có thể nhìn thấy nhưng R không có box tương ứng. Cần QA phân xử reference.,escalated
+4,2026-09-28,Phạm vi rework P5,keep_with_reason,Các dòng chẩn đoán hiện ở P2 hoặc P3 và không có lỗi annotator P0/P1 đủ chắc để sửa bản khóa.,done

@@ -1,9 +1,9 @@
 camera_id,slice_type,frames,risk,rationale
-front,normal,,TODO,TODO
-front,hard,,TODO,TODO
-rear,normal,,TODO,TODO
-rear,hard,,TODO,TODO
-left,normal,,TODO,TODO
-left,hard,,TODO,TODO
-right,normal,,TODO,TODO
-right,hard,,TODO,TODO
+front,normal,30,xe lớn rõ và vật trung tâm dễ kiểm,Giữ mẫu thường để theo dõi class và geometry ổn định
+front,hard,20,méo rìa và vật cắt bởi vòng kính,Ưu tiên box truncated và ego_body ở phía trước
+rear,normal,30,xe đi xa và occlusion nhẹ,Kiểm continuity của vật và vùng đường trống phía sau
+rear,hard,20,seam phía góc và đèn chói,Review vùng overlap cùng calibration và timestamp
+left,normal,25,xe đỗ và người đi bộ gần curb,Kiểm class và ignore_region ở mép trái
+left,hard,25,cụm xe hoặc người chồng lấn,Kiểm tách vật và policy crowd_or_group
+right,normal,30,xe máy và ThreeWheeler ở khoảng cách vừa,Kiểm Rider/Bike và box tight trên ảnh gốc
+right,hard,20,vật nhỏ ở rìa và mất một phần thân,Kiểm H=40 truncated occluded và vùng seam
